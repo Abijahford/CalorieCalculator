@@ -106,8 +106,8 @@
       var lbs = document.getElementById("weight").value;
       var total = 0;
       // alert(option.value);
-      if (option.value == 0) {
-        alert("You must select an option.");
+      if (option.value == 0 || typeof lbs == "string") {
+        alert("You must select an option. Make sure to use a number for the Weight.");
       } else if (option.value == 1 ) {
         var text = "IMO a calorie deficit is not neccessary to lose weight, an easy fix is to eat healthier and excercise." + '<br>' +'<a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy">' + 'Harvard Study' + '</a>';
         event.preventDefault()
