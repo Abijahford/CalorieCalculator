@@ -110,26 +110,26 @@
       if (option.value == 0) {
         alert("You must select an option.");
       } else if (option.value == 1 ) {
-        var pretext = '<hr class="my-4">' + 'You choosed to ' + optionText + '. Below is the amount of calories you should ingest each day.';
+        var pretext = '<hr class="my-4">' + 'You have chosen to ' + optionText + '. Below is the amount of calories you should ingest each day.';
         var text = "IMO a calorie deficit is not neccessary to lose weight, an easy fix is to eat healthier and excercise." + '<br>' +'<a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy">' + 'Harvard Study' + '</a>';
         event.preventDefault()
         total = lbs * 15;
         output = pretext + '<b>' + '<h4>' + total + 'cals</b>' + '</h4>' + text;
-        $(".weight").after(output);
+        $(".lead").after(output);
       } else if (option.value == 2) {
-        var pretext = '<hr class="my-4">' + 'You choosed to ' + optionText + '. Below is the amount of calories you should ingest each day.';
+        var pretext = '<hr class="my-4">' + 'You have chosen to ' + optionText + '. Below is the amount of calories you should ingest each day.';
         var text = '<br>' +'<a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy">' + 'Harvard Study' + '</a>';
         event.preventDefault()
         total =  lbs * 15;
         output = pretext + '<b>' + '<h4>' + total + 'cals</b>' + '</h4>' + text;
-        $(".weight").after(output);
+        $(".lead").after(output);
       } else {
-        var pretext = '<hr class="my-4">' + 'You choosed to ' + optionText + '. Below is the amount of calories you should ingest each day.';
+        var pretext = '<hr class="my-4">' + 'You have chosen to ' + optionText + '. Below is the amount of calories you should ingest each day.';
         var text = "This is reccomended to those that spend 1-2 hours weight lifting and or burning and excessive amount of calories in a day." + '<br>' +'<a href="https://www.livestrong.com/article/159193-calorie-intake-to-gain-muscle/">' + 'Live Strong Study' + '</a>';
         event.preventDefault()
         total = lbs * 19;
         output = pretext + '<b>' + '<h4>' + total + 'cals</b>' + '</h4>' + text;
-        $(".weight").after(output);
+        $(".lead").after(output);
       }
     }
 
